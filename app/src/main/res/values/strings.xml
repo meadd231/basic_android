@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">독서도우미</string>
+    <string name="memo_page">메모</string>
+    <string name="menu_main_search_hint">기록한 책에 대해 검색</string>
+</resources>

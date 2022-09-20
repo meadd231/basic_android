@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/round_background"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/title_list"
+        style="@style/CustomTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:text="책 제목"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/first_memo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/date_list"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="최초 작성일"
+        android:textSize="17sp" />
+
+</LinearLayout>

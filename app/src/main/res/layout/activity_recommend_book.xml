@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".bestseller.RecommendBook">
+
+    <androidx.core.widget.NestedScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/book_site_name"
+                style="@style/CustomTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="인터파크도서"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/category_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="분야선택"
+                android:padding="5dp"
+                android:textSize="17sp" />
+
+            <RadioGroup
+                android:id="@+id/category_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="국내도서" />
+
+                <RadioButton
+                    android:id="@+id/radio101"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="국내도서>소설" />
+
+                <RadioButton
+                    android:id="@+id/radio104"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="국내도서>사회과학" />
+
+                <RadioButton
+                    android:id="@+id/radio105"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="국내도서>역사와 문화" />
+
+                <RadioButton
+                    android:id="@+id/radio116"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="국내도서>자연과 과학" />
+
+                <RadioButton
+                    android:id="@+id/radio118"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="국내도서>자기계발" />
+
+                <RadioButton
+                    android:id="@+id/radio122"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="국내도서>컴퓨터" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="외국도서" />
+
+                <RadioButton
+                    android:id="@+id/radio211"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="외국도서>컴퓨터" />
+            </RadioGroup>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/book_rank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:overScrollMode="never"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

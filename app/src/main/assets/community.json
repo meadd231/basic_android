@@ -1,0 +1,43 @@
+{
+  "writtenList":[
+    {
+      "writtenTitle": "세체미 누구?",
+      "writtenAuthor":"박진혁",
+      "writtenPassword": "1234",
+      "writtenDate": "2021-03-21",
+      "viewsNum":4,
+      "comments": [
+        {
+          "commentContents": "ㅋㅋ",
+          "commentDate": "2021-03-21"
+        },
+        {
+          "commentContents": "ㅋㅋ",
+          "commentDate": "2021-03-21"
+        }
+      ],
+      "contents": [
+        {
+          "contentsText": "킹쵸비",
+          "contentsImage": "agegasgeasge241rfasf"
+        }
+      ]
+    },
+    {
+      "writtenTitle": "세체미 누구?",
+      "writtenAuthor":"박진혁",
+      "writtenDate": "2021-03-21",
+      "viewsNum":4,
+      "comments": [
+        {
+          "commentContents": "ㅋㅋ",
+          "commentDate": "2021-03-21"
+        },
+        {
+          "commentContents": "",
+          "commentDate": "2021-03-21"
+        }
+      ]
+    }
+  ]
+}

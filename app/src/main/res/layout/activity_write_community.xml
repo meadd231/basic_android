@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".community.WriteCommunity">
+
+    <ScrollView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.bookmemoapp.custom.ClearEditText
+                android:id="@+id/write_written_title"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_background"
+                android:hint="제목" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+            <com.example.bookmemoapp.custom.ClearEditText
+                android:id="@+id/write_written_author"
+                android:layout_marginTop="10dp"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:background="@drawable/round_background"
+                android:singleLine="true"
+                android:hint="작성자" />
+
+            <com.example.bookmemoapp.custom.ClearEditText
+                android:id="@+id/write_written_password"
+                android:layout_marginTop="10dp"
+                android:layout_width="190dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:background="@drawable/round_background"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:hint="비밀번호" />
+
+            </LinearLayout>
+
+            <com.example.bookmemoapp.custom.ClearEditText
+                android:id="@+id/write_written_contents"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_background"
+                android:hint="내용을 입력해주세요" />
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/write_written_image"
+                android:layout_width="match_parent"
+                android:layout_height="500dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cameraBtn"
+            android:textAlignment="center"
+            style="@style/CustomTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/borderline"
+            android:text="카메라" />
+
+        <TextView
+            android:id="@+id/galleryBtn"
+            android:textAlignment="center"
+            style="@style/CustomTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/borderline"
+            android:text="갤러리" />
+
+        <TextView
+            android:id="@+id/linkBtn"
+            android:textAlignment="center"
+            style="@style/CustomTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/borderline"
+            android:text="링크" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="yes24"
+        android:id="@+id/yes24"/>
+    <item android:title="교보문고"
+        android:id="@+id/kyobo"/>
+    <item android:title="알라딘"
+        android:id="@+id/aladin"/>
+    <item android:title="인터파크도서"
+        android:id="@+id/interpark"/>
+</menu>

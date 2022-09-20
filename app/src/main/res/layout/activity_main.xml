@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/main_text"
+                    style="@style/CustomTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="2권의 책 기록"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/book_list_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:overScrollMode="never" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CustomTextView"
+            android:background="@drawable/borderline"
+            android:textSize="17sp"
+            android:id="@+id/timer"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="타이머" />
+
+        <TextView
+            style="@style/CustomTextView"
+            android:background="@drawable/borderline"
+            android:textSize="17sp"
+            android:id="@+id/searchBook"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="도서검색" />
+
+        <TextView
+            style="@style/CustomTextView"
+            android:background="@drawable/borderline"
+            android:textSize="17sp"
+            android:id="@+id/recommendBook"
+            android:gravity="center"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:text="베스트셀러" />
+
+        <TextView
+            style="@style/CustomTextView"
+            android:background="@drawable/borderline"
+            android:textSize="17sp"
+            android:id="@+id/community"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="커뮤니티" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

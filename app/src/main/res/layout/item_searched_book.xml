@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10sp"
+    android:background="#4B03A9F4">
+    <ImageView
+        android:id="@+id/searched_image"
+        android:layout_width="70sp"
+        android:layout_height="50sp"
+        android:src="@drawable/ic_launcher_background"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searched_title"
+        android:layout_toRightOf="@id/searched_image"
+        android:text="책제목"
+        android:textSize="20sp"
+        android:singleLine="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searched_price"
+        android:text="책가격"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/searched_image"
+        android:layout_below="@id/searched_title"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>
